@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- CSS link  -->
+	<link rel="stylesheet" href="../CSS/style.css">
+
+	<!-- Boxicons link -->
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<title>#skills page</title>
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="logo">
+			<a href="./index.html">Portfolio</a>
+		</div>
+
+		<div class="menu-bar">
+			<i class='bx bx-menu-alt-right' id="open"></i>
+			<!-- <i class='bx bx-menu' ></i> -->
+		</div>
+
+		<div class="navbar">
+			<nav>
+				<a href="./index.html">Home</a>
+				<a href="./index.html">About</a>
+				<a href="./skills.html" class="active">Skills</a>
+				<a href="./services.html">Services</a>
+				<a href="./projects.html">Projects</a>
+				<a href="./contact.html">Contact</a>
+				<i class="fa-solid fa-xmark" id="close"></i>
+			</nav>
+		</div>
+	</header>
+
+
+	<!-- Skills Home  -->
+	<section class="home home-heading secondBg home-header home-container" id="home">
+		<div class="home-content ">
+			<h1>#<span class="main-heading">skills</span> </h1>
+			<p class="home-disc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime suscipit recusandae in
+				temporibus cum quis. Maiores eveniet quod, fugit minima, explicabo sunt asperiores, suscipit nulla quos
+				facere rem. Provident, nulla.</p>
+		</div>
+	</section>
+
+
+	<!-- skills  -->
+	<section class="skills bgBack">
+		<div class="services-heading">
+			<h2 class="heading">My <span>Skills</span></h2>
+		</div>
+
+
+
+		<div class="my-skills">
+			<div class="skill-container skillLevel" id="skillLevel">
+				<table class="table">
+					<tr class="skill-content">
+						<td class="skill-head">HTML </td>
+						<td class="line ">
+							<div class="html">90%</div>
+						</td>
+					</tr>
+					<tr class="skill-content">
+						<td class="skill-head">CSS </td>
+						<td class="line ">
+							<div class="css">80%</div>
+						</td>
+					</tr>
+
+					<tr class="skill-content">
+						<td class="skill-head">JAVASCRIPT </td>
+						<td class="line">
+							<div class="javascript">60%</div>
+						</td>
+					</tr>
+					<tr class="skill-content">
+						<td class="skill-head">BOTSTRAP </td>
+						<td class="line">
+							<div class="bootstrap">70%</div>
+						</td>
+					</tr>
+					<tr class="skill-content">
+						<td class="skill-head">REACTJS </td>
+						<td class="line ">
+							<div class="reactjs">40%</div>
+						</td>
+					</tr>
+					<tr class="skill-content">
+						<td class="skill-head">EXPRESSJS </td>
+						<td class="line">
+							<div class="expressjs">20%</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+
+
+			<div class="skill-container skillImg skill-imgs" id="skillImg">
+				<div class="img-container">
+					<img src="../Images/html5.png" alt="">
+				</div>
+				<div class="img-container">
+					<img src="../Images/css.png" alt="">
+				</div>
+				<div class="img-container">
+					<img src="../Images/javascript.png" alt="">
+				</div>
+				<div class="img-container nodejs">
+					<img src="../Images/nodejs.png" alt="">
+				</div>
+				<div class="img-container expressjs">
+					<img src="../Images/expressjs.png" alt="">
+				</div>
+				<div class="img-container sql">
+					<img src="../Images/sql.png" alt="">
+				</div>
+				<div class="img-container mongodb">
+					<img src="../Images/mongoodb.png" alt="">
+				</div>
+			</div>
+		</div>
+
+		<div class="changeBtnClick">
+			<button class="btn changeContent" onclick="changeContent()" id="changeContent">Change</button>
+		</div>
+
+
+		</div>
+
+		</div>
+
+	</section>
+
+
+	<!-- footer  -->
+	<footer class="footer">
+		<div class="footer-text">
+			<p>Copyright &copy; 2023 by HS | All Rights Reserved</p>
+		</div>
+
+		<div class="footer-icon">
+			<a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+		</div>
+	</footer>
+
+	<script src="../JS/index.js"></script>
+	<script src="../JS/skills.js"></script>
+	<script src="../JS/navbar.js"></script>
+</body>
+
+</html>

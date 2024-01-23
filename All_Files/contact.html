@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- CSS link  -->
+	<link rel="stylesheet" href="../CSS/style.css">
+
+	<!-- Boxicons link -->
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<title>#contact page</title>
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="logo">
+			<a href="/All_Files/index.html">Portfolio</a>
+		</div>
+
+		<div class="menu-bar">
+			<i class='bx bx-menu-alt-right' id="open"></i>
+			<!-- <i class='bx bx-menu' ></i> -->
+		</div>
+
+		<div class="navbar">
+			<nav>
+				<a href="./index.html">Home</a>
+				<a href="./index.html">About</a>
+				<a href="./skills.html">Skills</a>
+				<a href="./services.html">Services</a>
+				<a href="./projects.html">Projects</a>
+				<a href="./contact.html" class="active">Contact</a>
+				<i class="fa-solid fa-xmark" id="close"></i>
+			</nav>
+		</div>
+	</header>
+
+
+	<!-- Services  -->
+	<section class="home home-heading secondBg home-header home-container" id="home">
+		<div class="home-content ">
+			<h1>#<span class="main-heading">contact me</span> </h1>
+			<p class="home-disc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime suscipit recusandae in
+				temporibus cum quis. Maiores eveniet quod, fugit minima, explicabo sunt asperiores, suscipit nulla quos
+				facere rem. Provident, nulla.</p>
+
+		</div>
+	</section>
+
+
+
+
+	<!-- Contact  -->
+	<section class="contact" id="contact">
+		<h2 class="main-heading">Contact <span>Me!</span></h2>
+
+		<form action="" name="myForm" onsubmit="">
+			<div id="submitError">
+				<p id="errorMsg" class="error"></p>
+			</div>
+			<div class="input-box">
+				<input type="text" name="name" id="name" placeholder="Your Full Name" autocomplete="off"
+					onkeyup=" validateName()">
+				<span id="nameError" class="error"></span>
+
+				<input type="email" id="email" placeholder="Your Email" autocomplete="off" onkeyup=" validateEmail()">
+				<span id="emailError" class="error"></span>
+			</div>
+
+			<div class="input-box">
+				<input type="phone" id="phone" placeholder="Your Phone" onkeyup=" validatePhone()">
+				<span id="phoneError" class="error"></span>
+
+				<input type="text" id="subject" placeholder="Subject" autocomplete="off" onkeyup=" validateSubject()">
+				<span id="subjectError" class="error"></span>
+			</div>
+
+			<div class="input-box">
+				<textarea id="messag" cols="30" rows="10" placeholder="Your Message"
+					onkeyup=" validateMsg()"></textarea>
+
+			</div>
+
+			<input type="submit" onclick="submitForm()" class="btn submit-btn" value="Send Message">
+		</form>
+	</section>
+
+
+	<!-- footer  -->
+	<footer class="footer">
+		<div class="footer-text">
+			<p>Copyright &copy; 2023 by HS | All Rights Reserved</p>
+		</div>
+
+		<div class="footer-icon">
+			<a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+		</div>
+	</footer>
+
+	<script src="../JS/index.js"></script>
+	<script src="../JS/navbar.js"></script>
+</body>
+
+</html>
